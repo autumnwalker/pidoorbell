@@ -1,0 +1,10 @@
+[Unit]
+Description=Doorbell Notifier
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/doorbell.py
+
+[Install]
+WantedBy=multi-user.target
